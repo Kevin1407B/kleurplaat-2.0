@@ -13,10 +13,10 @@ class Kleurplaat {
 
         for (let rij = 0; rij < this.#rijen; rij ++) {
             const tr = tbody.insertRow();
-            this.#kleurplaat.push(tr);
+            this.#kleurplaat[rij] = [];
             for (let kolom = 0; kolom < this.#kolommen; kolom ++) {
                 const td = tr.insertCell();
-                this.#kleurplaat.push(td);
+                this.#kleurplaat[rij][kolom] = "W";
             }
         }
     }
